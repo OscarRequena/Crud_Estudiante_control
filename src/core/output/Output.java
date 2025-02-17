@@ -12,7 +12,8 @@ public class Output {
                 2. Dar de baja a un Estudiante
                 3. Modificar la nota de un Estudiante
                 4. Listar a los Estudiantes
-               
+                5. Salir de la aplicación
+                
                 Ingrese la Opción que deseas realizar:
                 """);
     }
