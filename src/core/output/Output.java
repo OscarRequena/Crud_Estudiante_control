@@ -44,4 +44,22 @@ public class Output {
     public static void DarAltaExitosamente() {
         System.out.println("Se a dado de alta correctamente !!! ");
     }
+
+    public static void noHayEstudiante() {
+        System.err.println("No hay estudiantes dados de alta");
+    }
+
+    public static void finalTabla() {
+        System.out.println("-----------------------------------------------------------------------------------------------------------------------");
+    }
+
+    public static void cabeceraTabla(){
+        System.out.println("-----------------------------------------------------------------------------------------------------------------------");
+        System.out.printf("| %-2s | %-20s | %-20s | %-2s | %-20s | %-2s |\n","ID","Nombre completo","Asignatura 1","(nota)","Asignatura2","(nota)");
+        System.out.println("-----------------------------------------------------------------------------------------------------------------------");
+
+    }
+    public static void cuerpoTabla(int id, String nombreCompleto, String asignatura1, double nota1, String asignatura2, double nota2) {
+        System.out.printf("| %-2s | %-20s | %-20s | %-2s | %-20s | %-2s |\n", id, nombreCompleto, asignatura1, nota1, asignatura2, nota2);
+    }
 }
