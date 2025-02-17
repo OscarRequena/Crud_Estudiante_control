@@ -44,9 +44,17 @@ public class Crud_Estudiantes {
                         listarEstudiante();
                         darBajaEstudiante();
                         break;
+                    case  MODIFICAR_NOTA:
+                        listarEstudiante();
+                        modificarNota();
+                        break;
                 }
             }
         }while(!UsuarioQuiereSalir);
+    }
+
+    private static void modificarNota() {
+        modificar.Modificar.modificarNota();
     }
 
     private static void darBajaEstudiante() {
