@@ -62,4 +62,8 @@ public class Output {
     public static void cuerpoTabla(int id, String nombreCompleto, String asignatura1, double nota1, String asignatura2, double nota2) {
         System.out.printf("| %-2s | %-20s | %-20s | %-2s | %-20s | %-2s |\n", id, nombreCompleto, asignatura1, nota1, asignatura2, nota2);
     }
+
+    public static void ingresarIdEstudiante() {
+        System.out.println("Ingrese el id del estudiante: ");
+    }
 }

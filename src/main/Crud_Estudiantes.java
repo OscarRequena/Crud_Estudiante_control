@@ -40,9 +40,17 @@ public class Crud_Estudiantes {
                     case LISTADO_ESTUDIANTE:
                         listarEstudiante();
                         break;
+                    case  DAR_BAJA_ESTUDIANTE:
+                        listarEstudiante();
+                        darBajaEstudiante();
+                        break;
                 }
             }
         }while(!UsuarioQuiereSalir);
+    }
+
+    private static void darBajaEstudiante() {
+        bajas.Bajas.darBajaEstudiante();
     }
 
     private static void listarEstudiante() {
