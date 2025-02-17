@@ -2,6 +2,8 @@ package main;
 
 import core.model.Estudiantes;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 public class Crud_Estudiantes {
     public static int opcionMenu;
@@ -12,8 +14,10 @@ public class Crud_Estudiantes {
    public final static int SALIR_PROGRAMA = 5;
    public final static int NUMERO_ESTUDIANTES = 2;
    public static HashMap<Integer, Estudiantes> estudiantes;
+   public static Iterator<Map.Entry<Integer,Estudiantes>> iterator;
     public static void main(String[] args) {
         estudiantes = new HashMap<>();
+
         boolean UsuarioQuiereSalir = false;
         do {
             boolean ValidadorIncorrecto = false;
@@ -31,12 +35,18 @@ public class Crud_Estudiantes {
                 switch (opcionMenu){
                     case DAR_ALTA_ESTUDIANTE:
                         darAltaEstudiante();
+                        listarEstudiante();
                         break;
                     case LISTADO_ESTUDIANTE:
+                        listarEstudiante();
                         break;
                 }
             }
         }while(!UsuarioQuiereSalir);
+    }
+
+    private static void listarEstudiante() {
+        listado.Listado.listarEstudiante();
     }
 
     private static void darAltaEstudiante() {
